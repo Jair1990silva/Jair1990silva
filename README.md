@@ -28,7 +28,7 @@
         const interval = setInterval(() => {
             const now = new Date();
             const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getUTCFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
-            document.getElementById('data-hora') = dataHora;
+            document.getElementById('data-hora').innerhtml = dataHora;
         }, 1000);
     </script>
 </div>
