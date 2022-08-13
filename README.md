@@ -20,6 +20,18 @@
  <a  href="https://www.linkedin.com/in/jair-caetano-397380231" target="_blank"><img height="30em" src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 
 ![Snake animation](https://github.com/jair1990silva/jair1990silva/blob/output/github-contribution-grid-snake.svg)
+<div id="data-hora"></div>
+    <script>
+        const zeroFill = n => {
+            return ('0' + n).slice(-2);
+        }
+
+        const interval = setInterval(() => {
+            const now = new Date();
+            const dataHora = zeroFill(now.getUTCDate()) + '/' + zeroFill((now.getMonth() + 1)) + '/' + now.getUTCFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+            document.getElementById('data-hora').innerHTML = dataHora;
+        }, 1000);
+    </script>
 </div>
   
   
